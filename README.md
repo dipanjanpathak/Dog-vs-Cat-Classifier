@@ -180,22 +180,35 @@ validation_generator = test_datagen.flow_from_directory(
 
 #### Code:
 ```python
+
+
 base_model = VGG16(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+
+# Freeze the base model layers
 base_model.trainable = False
 
+# Build the model
 model = Sequential()
 model.add(base_model)
-model.add(GlobalAveragePooling2D())
-model.add(Dense(1024, activation='relu'))
-model.add(Dense(1, activation='sigmoid'))
+model.add(layers.Flatten())
+model.add(layers.Dropout(0.5))
+model.add(layers.Dense(256, activation='relu'))
+model.add(layers.Dense(1, activation='sigmoid'))
 
-model.compile(optimizer=Adam(learning_rate=0.0001), loss='binary_crossentropy', metrics=['accuracy'])
+# Compile the model
+model.compile(optimizer=optimizers.RMSprop(learning_rate=2e-5), loss='binary_crossentropy', metrics=['accuracy'])
 
-history = model.fit(train_generator, steps_per_epoch=train_generator.samples // 32, epochs=10, validation_data=validation_generator, validation_steps=validation_generator.samples // 32)
+
+history = model.fit(
+    train_generator,
+    steps_per_epoch=320,
+    epochs=30,
+    validation_data=validation_generator,
+    validation_steps=90)
 ```
 So we achive :  
-Validation Loss: 0.19484055042266846  
-Validation Accuracy: 0.9200000166893005  
+Validation Loss: 0.16616246104240417  
+Validation Accuracy: 0.932200014591217 
 
 #### Training and Validation Loss Plot:
 ![Transfer Learning VGG16 Plot](images/VGG16-Training-and-Validation-Loss-plot.png)  
