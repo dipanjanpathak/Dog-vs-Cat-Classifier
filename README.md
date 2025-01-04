@@ -207,8 +207,8 @@ history = model.fit(
     validation_steps=90)
 ```
 So we achive :  
-Validation Loss: 0.16616246104240417  
-Validation Accuracy: 0.932200014591217 
+Validation Loss: 0.16431619226932526  
+Validation Accuracy: 0.9359999895095825
 
 #### Training and Validation Loss Plot:
 ![Transfer Learning VGG16 Plot](images/VGG16-Training-and-Validation-Loss-plot.png)  
