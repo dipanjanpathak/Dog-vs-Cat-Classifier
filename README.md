@@ -1,5 +1,5 @@
 
-# Cat vs Dog Classifier
+# Fine tune Cat vs Dog Classifier (95% to 98%)
 <p align="center">
   <img src="images/ddog-vs-cat-cover-photo.jpeg" width="600" height="600"/>
 </p>
