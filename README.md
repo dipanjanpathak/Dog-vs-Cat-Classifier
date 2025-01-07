@@ -5,7 +5,23 @@
 </p>
 
 
-This repository contains a comprehensive implementation of a **Cat vs Dog Classifier** using Convolutional Neural Networks (CNNs) built with TensorFlow and Keras. The project showcases different approaches to model building, data augmentation, and fine-tuning, providing a robust foundation for binary image classification tasks.
+
+
+This repository contains a comprehensive implementation of a **Cat vs Dog Classifier** using Convolutional Neural Networks (CNNs) built with TensorFlow and Keras. The project showcases various approaches to model building, data augmentation, and fine-tuning, providing a robust foundation for binary image classification tasks.
+
+## Fine-Tuning
+
+This project is a fine-tuned version of the work done by [Sachin Patil](https://www.kaggle.com/code/sachinpatil1280/cats-vs-dogs-image-classification-using-cnn-95), who achieved an accuracy of **95%** on the Cat vs Dog classification task. Through further optimization and fine-tuning, this implementation achieves an improved accuracy of **98%**.
+
+## Features
+
+- Comprehensive use of **Convolutional Neural Networks (CNNs)** for image classification.
+- **Data augmentation** techniques to enhance model generalization.
+- Fine-tuning with a focus on improving performance beyond the baseline.
+
+## Acknowledgements
+
+Special thanks to [Sachin Patil](https://www.kaggle.com/code/sachinpatil1280/cats-vs-dogs-image-classification-using-cnn-95) for the initial implementation that laid the foundation for this project.
 
 ---
 
