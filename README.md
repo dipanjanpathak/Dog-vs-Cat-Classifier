@@ -247,7 +247,7 @@ The models achieve over 90% validation accuracy with proper tuning and augmentat
 ## Fine-Tuning VGG16 Model for Image Classification
 
 ### Overview
-After performing fine-tuning on the project using the VGG16 model, we achieved **98% accuracy** on the validation set, surpassing the previous benchmark of 95%. This enhancement demonstrates the effectiveness of transfer learning combined with additional CNN layers for improving performance.
+After performing fine-tuning on the project using the VGG16 model, I achieved **98% accuracy** on the validation set, surpassing the previous benchmark of 95%. This enhancement demonstrates the effectiveness of transfer learning combined with additional CNN layers for improving performance.
 
 ---
 
