@@ -357,11 +357,16 @@ Validation Loss: 0.0678948163986206
 Validation Accuracy: 0.980400025844574
 ```
 
+
+
+
 #### Loss and Accuracy Curves:
-- **Training and Validation Loss**:
-  ![Loss Curve](images/fine_tune_loss_curve.png)
-- **Training and Validation Accuracy**:
-  ![Accuracy Curve](images/fine_tune_accuracy_curve.png)
+![Transfer Learning VGG16 Loss Curve Plot](images/fine_tune_loss_curve.png)  
+
+#### Training and Validation Accuracy Plot:
+![Transfer Learning VGG16 Accuracy Curve Plot](images/fine_tune_accuracy_curve.png)
+
+
 
 ---
 
